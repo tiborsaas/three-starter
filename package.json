@@ -1,0 +1,31 @@
+{
+  "name": "three-starter",
+  "version": "1.0.0",
+  "description": "Three.js ES6 boilerplate that uses Rollup and the ES6 modules",
+  "engines": {
+    "node": ">=6.9.0"
+  },
+  "scripts": {
+    "dev": "rollup -c -w -m inline",
+    "build": "rollup -c rollup.build.config.js || true"
+  },
+  "keywords": [
+    "three.js",
+    "rollup",
+    "boilerplate"
+  ],
+  "author": "Tibor Szász",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.18.0",
+    "rollup": "^0.36.3",
+    "rollup-watch": "^4.3.1",
+    "rollup-plugin-babel": "^2.6.1",
+    "rollup-plugin-livereload": "^0.6.0",
+    "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup-plugin-serve": "^0.4.2",
+    "rollup-plugin-threejs-legacy-import": "^1.0.1"
+  },
+  "dependencies": {
+    "three": "github:mrdoob/three.js#dev"
+  }
+}
